@@ -318,9 +318,9 @@ namespace ReminderCSharpLang
             //    Console.WriteLine(kvp.Key +" " + kvp.Value);
             //}
 
-
-            double daysSinceMillenium = (DateTime.Now - new DateTime(2000, 1, 1)).TotalDays;
-            Console.WriteLine($"Today is {DateTime.Now:F} and {daysSinceMillenium:N2} days have passed since the last millennium!");
+            //String Format
+            //double daysSinceMillenium = (DateTime.Now - new DateTime(2000, 1, 1)).TotalDays;
+            //Console.WriteLine($"Today is {DateTime.Now:F} and {daysSinceMillenium:N2} days have passed since the last millennium!");
 
             Console.ReadLine();
         }
