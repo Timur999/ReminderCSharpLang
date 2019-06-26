@@ -1,0 +1,14 @@
+﻿using ReminderCSharpLang.Model.Vehicles;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ReminderCSharpLang.Model.Interfaces
+{
+    interface IDriver
+    {
+        void TakeTheSeat(IVehicle vehicle);
+    }
+}

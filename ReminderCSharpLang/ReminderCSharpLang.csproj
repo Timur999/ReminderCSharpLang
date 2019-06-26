@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{47C4344F-7EC1-4C55-B8A9-A9AFA6CB419D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ReminderCSharpLang</RootNamespace>
+    <AssemblyName>ReminderCSharpLang</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\Animals\Animal.cs" />
+    <Compile Include="Model\Animals\Cat.cs" />
+    <Compile Include="Model\Animals\Dog.cs" />
+    <Compile Include="Model\Animals\Human.cs" />
+    <Compile Include="Model\Car.cs" />
+    <Compile Include="Model\Comparer\ComparerAnimalByName.cs" />
+    <Compile Include="Model\Comparer\ComparerString.cs" />
+    <Compile Include="Model\Coordinate\Coordinates.cs" />
+    <Compile Include="Model\Interfaces\IAnimal.cs" />
+    <Compile Include="Model\Interfaces\IDriver.cs" />
+    <Compile Include="Model\Interfaces\IPetrol.cs" />
+    <Compile Include="Model\Interfaces\IShop.cs" />
+    <Compile Include="Model\Interfaces\IVehicle.cs" />
+    <Compile Include="Model\Managers\AnimalManager.cs" />
+    <Compile Include="Model\Map.cs" />
+    <Compile Include="Model\Vehicles\Car.cs" />
+    <Compile Include="Model\Vehicles\ExtensionMethods\VehicleExtension.cs" />
+    <Compile Include="Model\Vehicles\Moto.cs" />
+    <Compile Include="Model\Vehicles\MotoBike.cs" />
+    <Compile Include="Model\Vehicles\Vehicle.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
