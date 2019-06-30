@@ -13,9 +13,19 @@ using ReminderCSharpLang.Model.Interfaces;
 using ReminderCSharpLang.Model.Managers;
 using ReminderCSharpLang.Model.Comparer;
 using System.IO;
+using System.Xml;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
+using System.Xml.Linq;
+using System.Globalization;
+using ReminderCSharpLang.Model.User;
+using ReminderCSharpLang.Model.Culture;
+using ReminderCSharpLang.Model.MyEnums;
+using ReminderCSharpLang.Model.Exceptions_Statement;
 
 namespace ReminderCSharpLang
 {
+    public enum Days { Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday }
     class Program
     {
         static void DisplayDot()
@@ -322,6 +332,49 @@ namespace ReminderCSharpLang
             //double daysSinceMillenium = (DateTime.Now - new DateTime(2000, 1, 1)).TotalDays;
             //Console.WriteLine($"Today is {DateTime.Now:F} and {daysSinceMillenium:N2} days have passed since the last millennium!");
 
+
+            //            var o = @"[{
+            //  'Brand': 'Intel',
+            //  'Model': 'Intel',
+            //  'EngineCapacity': '1'},
+            //{
+            // 'Brand': 'AMD',
+            //  'Model': 'AMD',
+            //  'EngineCapacity': '2'
+            //}]";
+
+            //            var list = JsonConvert.DeserializeObject<List<dynamic>>(o);
+            //            Console.WriteLine(list.Where(x => x.Brand == "AMD").FirstOrDefault());
+
+            //            Console.WriteLine(o);
+
+
+            //            List<string> videogames = new List<string>
+            //{
+            //    "Starcraft",
+            //    "Halo",
+            //    "Legend of Zelda"
+            //};
+
+            //            string json = JsonConvert.SerializeObject(videogames);
+
+            //            string isStarcraft = videogames.Where(g => g == "Starcraft").First();
+
+            //            Console.WriteLine(isStarcraft);
+
+
+
+            //CultureInfo And RegionInfo
+
+            //Culture.DisplayAllCurrencySymbolInTheWorld();
+            //Culture.RegionInfoMethods("pl-PL");
+            //Culture.ListOfCountryWithRegioCountry();
+
+            //Enums
+            //MyEnums.EnumDays();
+
+
+            MyArray.OutOfArray();
             Console.ReadLine();
         }
 
@@ -330,6 +383,9 @@ namespace ReminderCSharpLang
         //{
         //    return user1.CompareTo(user2);
         //}
+
+
+
 
     }
 

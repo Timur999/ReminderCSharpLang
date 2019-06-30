@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -50,6 +53,9 @@
     <Compile Include="Model\Comparer\ComparerAnimalByName.cs" />
     <Compile Include="Model\Comparer\ComparerString.cs" />
     <Compile Include="Model\Coordinate\Coordinates.cs" />
+    <Compile Include="Model\Culture\Culture.cs" />
+    <Compile Include="Model\Exceptions Statement\MyArray.cs" />
+    <Compile Include="Model\MyEnums\MyEnums.cs" />
     <Compile Include="Model\Interfaces\IAnimal.cs" />
     <Compile Include="Model\Interfaces\IDriver.cs" />
     <Compile Include="Model\Interfaces\IPetrol.cs" />
@@ -57,16 +63,19 @@
     <Compile Include="Model\Interfaces\IVehicle.cs" />
     <Compile Include="Model\Managers\AnimalManager.cs" />
     <Compile Include="Model\Map.cs" />
+    <Compile Include="Model\User\User.cs" />
     <Compile Include="Model\Vehicles\Car.cs" />
     <Compile Include="Model\Vehicles\ExtensionMethods\VehicleExtension.cs" />
     <Compile Include="Model\Vehicles\Moto.cs" />
     <Compile Include="Model\Vehicles\MotoBike.cs" />
     <Compile Include="Model\Vehicles\Vehicle.cs" />
+    <Compile Include="Model\XMLDocuments\Currency.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
