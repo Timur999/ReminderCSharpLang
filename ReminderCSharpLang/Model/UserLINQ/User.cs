@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ReminderCSharpLang.Model.User
+namespace ReminderCSharpLang.Model.UserLINQ
 {
     public class User
     {

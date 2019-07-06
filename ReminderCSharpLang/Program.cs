@@ -18,10 +18,11 @@ using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 using System.Xml.Linq;
 using System.Globalization;
-using ReminderCSharpLang.Model.User;
+using ReminderCSharpLang.Model.UserLINQ;
 using ReminderCSharpLang.Model.Culture;
 using ReminderCSharpLang.Model.MyEnums;
 using ReminderCSharpLang.Model.Exceptions_Statement;
+using ReminderCSharpLang.Model.Generic;
 
 namespace ReminderCSharpLang
 {
@@ -373,8 +374,13 @@ namespace ReminderCSharpLang
             //Enums
             //MyEnums.EnumDays();
 
+            //Exceptions
+            //MyArray.OutOfArray();
 
-            MyArray.OutOfArray();
+            //generic
+            SomeGeneric.SwapExecute();
+            SomeGeneric.DisplayMultipleGenericExecute();
+
             Console.ReadLine();
         }
 
