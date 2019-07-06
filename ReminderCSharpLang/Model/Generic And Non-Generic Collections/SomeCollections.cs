@@ -18,7 +18,7 @@ namespace ReminderCSharpLang.Model.Generic_And_Non_Generic_Collections
             //Note: Generics List<T> , Dictionary<TKey,TValue>, SortedList<TKey,TValue>, Stack<T>, Queue<T>, Hashset<T>.
             //Its not strong typing can generate error 
             List<int> li = new List<int>() { 1, 2 };
-            Dictionary
+
         }
     }
 }
