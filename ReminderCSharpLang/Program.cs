@@ -18,7 +18,7 @@ using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 using System.Xml.Linq;
 using System.Globalization;
-using ReminderCSharpLang.Model.UserLINQ;
+using ReminderCSharpLang.Model.User;
 using ReminderCSharpLang.Model.Culture;
 using ReminderCSharpLang.Model.MyEnums;
 using ReminderCSharpLang.Model.Exceptions_Statement;
