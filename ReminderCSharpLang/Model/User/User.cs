@@ -29,13 +29,13 @@ namespace ReminderCSharpLang.Model.User
         {
 
             var names = new List<string>()
-{
-    "Zoe Doe",
-    "John Doe",
-    "Jane Doe",
-    "Jenna Doe",
-    "Joe Doe"
-};
+            {
+                "Zoe Doe",
+                "John Doe",
+                "Jane Doe",
+                "Jenna Doe",
+                "Joe Doe"
+            };
             //query syntax
             //var shName = from name in names where name.Length <= 8 orderby name.Length select name;
             //names.Add("Zoe Doe");
