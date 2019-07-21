@@ -382,6 +382,7 @@ namespace ReminderCSharpLang
             SomeGeneric.DisplayMultipleGenericExecute();
 
 
+
             Console.ReadLine();
         }
 
