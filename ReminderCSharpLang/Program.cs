@@ -390,11 +390,6 @@ namespace ReminderCSharpLang
         //    return user1.CompareTo(user2);
         //}
 
-
-
-
     }
-
-
 
 }
