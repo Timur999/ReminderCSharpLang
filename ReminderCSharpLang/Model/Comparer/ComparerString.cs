@@ -13,7 +13,6 @@ namespace ReminderCSharpLang.Model.Comparer
             //Note: this code sort arrary form 'z' to 'a'
             //x[0] < y[0] ? 1 : 0;
             return x.Length > y.Length ? 1 : 0;
-
         }
     }
 }
