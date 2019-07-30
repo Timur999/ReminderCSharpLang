@@ -71,6 +71,7 @@
     <Compile Include="Model\Vehicles\MotoBike.cs" />
     <Compile Include="Model\Vehicles\Vehicle.cs" />
     <Compile Include="Model\XMLDocuments\Currency.cs" />
+    <Compile Include="MyDelegate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
