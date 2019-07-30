@@ -381,7 +381,7 @@ namespace ReminderCSharpLang
             //generic
             SomeGeneric.SwapExecute();
             SomeGeneric.DisplayMultipleGenericExecute();
-             MyDelegate myDelegate = new MyDelegate();
+            MyDelegate myDelegate = new MyDelegate();
 
 
 
