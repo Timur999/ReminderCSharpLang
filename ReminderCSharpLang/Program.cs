@@ -22,6 +22,7 @@ using ReminderCSharpLang.Model.User;
 using ReminderCSharpLang.Model.Culture;
 using ReminderCSharpLang.Model.MyEnums;
 using ReminderCSharpLang.Model.Exceptions_Statement;
+using ReminderCSharpLang.Model.Delegates;
 using ReminderCSharpLang.Model.Generic;
 
 namespace ReminderCSharpLang
@@ -380,7 +381,7 @@ namespace ReminderCSharpLang
             //generic
             SomeGeneric.SwapExecute();
             SomeGeneric.DisplayMultipleGenericExecute();
-            MyDelegate myDelegate = new MyDelegate();
+             MyDelegate myDelegate = new MyDelegate();
 
 
 

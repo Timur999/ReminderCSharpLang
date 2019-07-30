@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ReminderCSharpLang.Model.MyDelegates
+namespace ReminderCSharpLang.Model.Delegates
 {
     public class MyDelegate
     {
