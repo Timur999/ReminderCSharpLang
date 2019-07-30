@@ -379,9 +379,11 @@ namespace ReminderCSharpLang
             //MyArray.OutOfArray();
 
             //generic
-            SomeGeneric.SwapExecute();
-            SomeGeneric.DisplayMultipleGenericExecute();
-            MyDelegate myDelegate = new MyDelegate();
+            //SomeGeneric.SwapExecute();
+            //SomeGeneric.DisplayMultipleGenericExecute();
+
+            //Delegates
+            MyDelegate myDelegate = new MyDelegate(4,3);
 
 
 

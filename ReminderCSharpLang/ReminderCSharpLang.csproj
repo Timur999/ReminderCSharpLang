@@ -54,6 +54,7 @@
     <Compile Include="Model\Comparer\ComparerString.cs" />
     <Compile Include="Model\Coordinate\Coordinates.cs" />
     <Compile Include="Model\Culture\Culture.cs" />
+    <Compile Include="Model\Delegates\MyDelegate.cs" />
     <Compile Include="Model\Exceptions Statement\MyArray.cs" />
     <Compile Include="Model\Generic\SomeGeneric.cs" />
     <Compile Include="Model\MyEnums\MyEnums.cs" />
@@ -78,8 +79,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Model\NewFolder1\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
