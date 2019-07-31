@@ -20,13 +20,16 @@ namespace ReminderCSharpLang.Model.Generic
             int a = 10;
             int b = 1;
             Console.WriteLine($"a = {a}, b = {b}");
+
             Swap<int>(ref a, ref b);
             Console.WriteLine($"a = {a}, b = {b}");
             string s1 = "Hello";
             string s2 = "World";
             Console.WriteLine($"s1 = {s1}, s2 = {s2}");
+
             Swap<string>(ref s1, ref s2);
             Console.WriteLine($"s1 = {s1}, s2 = {s2}");
+
             Swap(ref s1, ref s2);
             Console.WriteLine($"s1 = {s1}, s2 = {s2}");
         }

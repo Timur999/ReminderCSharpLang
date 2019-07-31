@@ -383,8 +383,12 @@ namespace ReminderCSharpLang
             //SomeGeneric.DisplayMultipleGenericExecute();
 
             //Delegates
-            MyDelegate myDelegate = new MyDelegate(4,3);
+            //MyDelegate myDelegate = new MyDelegate(4,3);
 
+            //reference
+            Car car = new Car("Opel", "Astra", 3, 3);
+            EngineChange(car);
+            Console.WriteLine(car.EngineCapacity);
 
 
             Console.ReadLine();
@@ -395,6 +399,12 @@ namespace ReminderCSharpLang
         //{
         //    return user1.CompareTo(user2);
         //}
+
+        //References
+        static void EngineChange(Car car)
+        {
+            car.EngineCapacity = 10;
+        }
 
     }
 
