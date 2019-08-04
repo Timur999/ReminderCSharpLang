@@ -15,7 +15,7 @@ namespace ReminderCSharpLang.Model.MyEnums
             //Days day = Days.Fri;
             Days day = (Days)5;
 
-            //Throw exceptcion when value does not exist
+            //NOTE: Throw exceptcion when value does not exist
             //Console.WriteLine(Enum.Parse(day.GetType(), "Tuew"));
 
             Days dayTue;
@@ -36,13 +36,15 @@ namespace ReminderCSharpLang.Model.MyEnums
             //Return Days enum array
             Array valueEnum = Enum.GetValues(typeof(Days));
             foreach (var d in valueEnum)
-                Console.WriteLine(d);
+                Console.WriteLine(d.GetType());
 
-            //It checks is 'Tue' exist and return bool
-            bool b = Enum.IsDefined(typeof(Days), "Tue");
+            Console.WriteLine(day.GetType());
+
+            //Checks is 'Wed' value exist and return bool
+            bool b = Enum.IsDefined(typeof(Days), "Wed");
 
             Console.WriteLine(b);
-            Console.WriteLine(Enum.IsDefined(typeof(Days), "Tue"));
+            Console.WriteLine(Enum.IsDefined(typeof(Days), "Wed"));
 
         }
     }

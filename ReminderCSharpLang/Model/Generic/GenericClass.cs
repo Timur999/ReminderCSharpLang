@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace ReminderCSharpLang.Model.Generic
 {
     class GenericClass<T>
@@ -11,9 +6,10 @@ namespace ReminderCSharpLang.Model.Generic
         public int index;
         public T someThing;
 
-        public GenericClass(T some, int idx)
+        public GenericClass(int idx, T some )
         {
-
+            this.index = idx;
+            this.someThing = some;
         }
     }
 
@@ -21,6 +17,4 @@ namespace ReminderCSharpLang.Model.Generic
     {
         GenericClass<int> genericClass = new GenericClass<int>(12, 11);
     }
-
-
 }

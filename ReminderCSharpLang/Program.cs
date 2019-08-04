@@ -24,6 +24,7 @@ using ReminderCSharpLang.Model.MyEnums;
 using ReminderCSharpLang.Model.Exceptions_Statement;
 using ReminderCSharpLang.Model.Delegates;
 using ReminderCSharpLang.Model.Generic;
+using ReminderCSharpLang.Model.Threads;
 
 namespace ReminderCSharpLang
 {
@@ -386,11 +387,17 @@ namespace ReminderCSharpLang
             //MyDelegate myDelegate = new MyDelegate(4,3);
 
             //reference
-            Car car = new Car("Opel", "Astra", 3, 3);
-            EngineChange(car);
-            Console.WriteLine(car.EngineCapacity);
+            //Car car = new Car("Opel", "Astra", 3, 3);
+            //EngineChange(car);
+            //Console.WriteLine(car.EngineCapacity);
 
 
+            //Thread And Delagate
+            //ThreadShareResources threadShareResources = new ThreadShareResources();
+            //threadShareResources.Run();
+
+
+            MyEnums.EnumDays();
             Console.ReadLine();
         }
 
@@ -406,6 +413,16 @@ namespace ReminderCSharpLang
             car.EngineCapacity = 10;
         }
 
+        public void Dodaj(int l1, int l2) { Console.WriteLine(l1 + l2); }
+        public void Odejmij(int l1, int l2) { Console.WriteLine(l1 - l2); }
+
+    }
+    public delegate void Dzialanie(int x, int y);
+
+    public class Matma
+    {
+        public void Dodaj(int l1, int l2) { Console.WriteLine(l1 + l2); }
+        public void Odejmij(int l1, int l2) { Console.WriteLine(l1 - l2); }
     }
 
 }
