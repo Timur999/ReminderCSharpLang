@@ -86,5 +86,10 @@ namespace ReminderCSharpLang.Model.Vehicles
                 }
             }
         }
+
+        public void CarInfo(string info)
+        {
+            Console.WriteLine(info);
+        }
     }
 }

@@ -69,6 +69,8 @@
     <Compile Include="Model\Comparer\ComparerString.cs" />
     <Compile Include="Model\Coordinate\Coordinates.cs" />
     <Compile Include="Model\Culture\Culture.cs" />
+    <Compile Include="Model\Delegates\Callbacks.cs" />
+    <Compile Include="Model\Delegates\FuncDelegates.cs" />
     <Compile Include="Model\Delegates\MyDelegate.cs" />
     <Compile Include="Model\Exceptions Statement\MyArray.cs" />
     <Compile Include="Model\Generic\GenericClass.cs" />
@@ -81,6 +83,7 @@
     <Compile Include="Model\Interfaces\IVehicle.cs" />
     <Compile Include="Model\Managers\AnimalManager.cs" />
     <Compile Include="Model\Map.cs" />
+    <Compile Include="Model\Structs\Shoes.cs" />
     <Compile Include="Model\Threads\ThreadShareResources.cs" />
     <Compile Include="Model\User\User.cs" />
     <Compile Include="Model\Vehicles\Car.cs" />

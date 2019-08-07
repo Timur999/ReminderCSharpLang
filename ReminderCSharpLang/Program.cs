@@ -391,13 +391,26 @@ namespace ReminderCSharpLang
             //EngineChange(car);
             //Console.WriteLine(car.EngineCapacity);
 
-
             //Thread And Delagate
             //ThreadShareResources threadShareResources = new ThreadShareResources();
             //threadShareResources.Run();
 
+            //Callbacks
+            //Cook cook = new Cook();
 
-            MyEnums.EnumDays();
+            //Func Delegare
+            FuncDelegates func = new FuncDelegates();
+            func.DoSome(FootBallPlayers.GetName, 2);
+            func.DoSome((int a) => { return "Saviola " + a; }, 2);
+
+            //Action delegate
+            Car car = new Car("Opel", "Vectra", 3f, 4);
+            Action<string> action = car.CarInfo;
+            action += Console.WriteLine;
+            action("Opyl");
+
+
+
             Console.ReadLine();
         }
 
