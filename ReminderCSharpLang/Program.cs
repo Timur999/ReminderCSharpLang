@@ -25,7 +25,6 @@ using ReminderCSharpLang.Model.Exceptions_Statement;
 using ReminderCSharpLang.Model.Delegates;
 using ReminderCSharpLang.Model.Generic;
 using ReminderCSharpLang.Model.Threads;
-using ReminderCSharpLang.Model.Switch;
 
 namespace ReminderCSharpLang
 {
@@ -410,10 +409,12 @@ namespace ReminderCSharpLang
             //action += Console.WriteLine;
             //action("Opyl");
 
-            //Switch
-            CarMechanic carMechanic = new CarMechanic();
-            carMechanic.ShowVechicleType(new Car("", "", 2, 1));
-            carMechanic.Repair(new Moto());
+            //Arrays
+            Dictionary<string, int> FightActionList = new Dictionary<string, int> { { "Hit", 1 }, { "Avoid", 2}, {"Spell",3 }, {"Defence", 4} };
+            FightActionList.Add("status", 1);
+
+
+            foreach(var  KeyValuePair)
 
             Console.ReadLine();
         }
