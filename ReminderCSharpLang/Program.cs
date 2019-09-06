@@ -25,6 +25,7 @@ using ReminderCSharpLang.Model.Exceptions_Statement;
 using ReminderCSharpLang.Model.Delegates;
 using ReminderCSharpLang.Model.Generic;
 using ReminderCSharpLang.Model.Threads;
+using ReminderCSharpLang.Model.Switch;
 
 namespace ReminderCSharpLang
 {
@@ -398,18 +399,21 @@ namespace ReminderCSharpLang
             //Callbacks
             //Cook cook = new Cook();
 
-            //Func Delegare
-            FuncDelegates func = new FuncDelegates();
-            func.DoSome(FootBallPlayers.GetName, 2);
-            func.DoSome((int a) => { return "Saviola " + a; }, 2);
+            ////Func Delegare
+            //FuncDelegates func = new FuncDelegates();
+            //func.DoSome(FootBallPlayers.GetName, 2);
+            //func.DoSome((int a) => { return "Saviola " + a; }, 2);
 
-            //Action delegate
-            Car car = new Car("Opel", "Vectra", 3f, 4);
-            Action<string> action = car.CarInfo;
-            action += Console.WriteLine;
-            action("Opyl");
+            ////Action delegate
+            //Car car = new Car("Opel", "Vectra", 3f, 4);
+            //Action<string> action = car.CarInfo;
+            //action += Console.WriteLine;
+            //action("Opyl");
 
-
+            //Switch
+            CarMechanic carMechanic = new CarMechanic();
+            carMechanic.ShowVechicleType(new Car("", "", 2, 1));
+            carMechanic.Repair(new Moto());
 
             Console.ReadLine();
         }

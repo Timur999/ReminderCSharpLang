@@ -64,7 +64,6 @@
     <Compile Include="Model\Animals\Cat.cs" />
     <Compile Include="Model\Animals\Dog.cs" />
     <Compile Include="Model\Animals\Human.cs" />
-    <Compile Include="Model\Car.cs" />
     <Compile Include="Model\Comparer\ComparerAnimalByName.cs" />
     <Compile Include="Model\Comparer\ComparerString.cs" />
     <Compile Include="Model\Coordinate\Coordinates.cs" />
@@ -84,6 +83,7 @@
     <Compile Include="Model\Managers\AnimalManager.cs" />
     <Compile Include="Model\Map.cs" />
     <Compile Include="Model\Structs\Shoes.cs" />
+    <Compile Include="Model\Switch\CarMechanic.cs" />
     <Compile Include="Model\Threads\ThreadShareResources.cs" />
     <Compile Include="Model\User\User.cs" />
     <Compile Include="Model\Vehicles\Car.cs" />
