@@ -25,6 +25,7 @@ using ReminderCSharpLang.Model.Exceptions_Statement;
 using ReminderCSharpLang.Model.Delegates;
 using ReminderCSharpLang.Model.Generic;
 using ReminderCSharpLang.Model.Threads;
+using ReminderCSharpLang.Model.Files;
 
 namespace ReminderCSharpLang
 {
@@ -414,7 +415,10 @@ namespace ReminderCSharpLang
             FightActionList.Add("status", 1);
 
 
-            foreach(var  KeyValuePair)
+            //foreach(var  KeyValuePair)
+
+            // Operaions on files
+            FileManager.ParseFile();
 
             Console.ReadLine();
         }

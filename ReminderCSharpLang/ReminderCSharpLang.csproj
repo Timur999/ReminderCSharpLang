@@ -72,6 +72,8 @@
     <Compile Include="Model\Delegates\FuncDelegates.cs" />
     <Compile Include="Model\Delegates\MyDelegate.cs" />
     <Compile Include="Model\Exceptions Statement\MyArray.cs" />
+    <Compile Include="Model\Files\FileManager.cs" />
+    <Compile Include="Model\Generic And Non-Generic Collections\SomeCollection.cs" />
     <Compile Include="Model\Generic\GenericClass.cs" />
     <Compile Include="Model\Generic\SomeGeneric.cs" />
     <Compile Include="Model\MyEnums\MyEnums.cs" />
